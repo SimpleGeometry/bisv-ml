@@ -41,6 +41,8 @@ print('weights:', h.coef_)
 print('bias:', h.intercept_)
 print('r^2:', h.score(X, y))
 
+####################################################################################
+
 
 #Graph plotting
 plt.figure(1)
