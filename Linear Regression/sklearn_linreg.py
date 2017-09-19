@@ -34,7 +34,7 @@ y_test = y[-100:]
 
 
 
-h = linear_model.SGDRegressor(penalty='none', eta0=0.03, n_iter=100000)
+h = linear_model.SGDRegressor(penalty='none', fit_intercept=True, eta0=0.03, n_iter=100000)
 h.fit(X_train, y_train)
 
 print('weights:', h.coef_)
