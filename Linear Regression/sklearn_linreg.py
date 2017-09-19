@@ -13,6 +13,27 @@ X_test = X[-100:]
 y_train = y[:-100]
 y_test = y[-100:]
 
+###########################################
+# Functions to run the program are below. Don't scroll down if you're trying to figure out the correct calls yourself
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 h = linear_model.SGDRegressor(penalty='none', eta0=0.03, n_iter=100000)
 h.fit(X_train, y_train)
 
@@ -20,6 +41,8 @@ print('weights:', h.coef_)
 print('bias:', h.intercept_)
 print('r^2:', h.score(X, y))
 
+
+#Graph plotting
 plt.figure(1)
 plt.subplot(2, 1, 1)
 plt.plot(X_test, y_test, 'bo')
