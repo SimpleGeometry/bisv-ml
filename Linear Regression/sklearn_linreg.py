@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 boston = datasets.load_boston()
-X = boston.data[:, 5] #2, 4, 5, 6, 12
+X = boston.data[:, 5]
 X = X.reshape((X.shape[0], 1))
 y = boston.target
 
