@@ -24,4 +24,6 @@ model.compile(loss='categorical_crossentropy',
 
 #model training and evaluation
 model.fit(X_train, y_train, epochs=5, batch_size=32)
-loss_and_metrics = model.evaluate(X_test, y_test, batch_size=128)
+loss, acc = model.evaluate(X_test, y_test)
+
+print('Final accuracy:', acc)
